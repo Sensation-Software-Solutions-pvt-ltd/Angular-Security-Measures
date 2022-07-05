@@ -1,0 +1,113 @@
+<section class="section-no-border">
+    <section>
+      <div class="bg-white border rounded-5">
+        <div id="dtBasicExample_wrapper" class="dataTables_wrapper dt-bootstrap4">
+         
+          <div class="row custom_table">
+            <div class="col-sm-12">
+              <table id="dtBasicExample" class="table table-striped table-bordered dataTable" cellspacing="0"
+                     width="100%" role="grid" aria-describedby="dtBasicExample_info" style="width: 100%;">
+                <thead>
+                  <tr role="row">
+                    <th class="th-sm sorting_asc" tabindex="0" aria-controls="dtBasicExample"
+                        rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name
+  
+            : activate to sort column descending" style="width: 134px;">
+                      Accession Number
+  
+                    </th>
+                    <th class="th-sm sorting" tabindex="0" aria-controls="dtBasicExample" rowspan="1"
+                        colspan="1" aria-label="Position
+  
+            : activate to sort column ascending" style="width: 206px;">
+                      Broker
+  
+                    </th>
+                    <th class="th-sm sorting" tabindex="0" aria-controls="dtBasicExample" rowspan="1"
+                        colspan="1" aria-label="Office
+  
+            : activate to sort column ascending" style="width: 97px;">
+                      Billing Method
+  
+                    </th>
+                    <th class="th-sm sorting" tabindex="0" aria-controls="dtBasicExample" rowspan="1"
+                        colspan="1" aria-label="Age
+  
+            : activate to sort column ascending" style="width: 75px;">
+                      DOB
+  
+                    </th>
+                    <th class="th-sm sorting" tabindex="0" aria-controls="dtBasicExample" rowspan="1"
+                        colspan="1" aria-label="Start date
+  
+            : activate to sort column ascending" style="width: 87px;">
+                      Full Address
+  
+                    </th>
+                    <th class="th-sm sorting" tabindex="0" aria-controls="dtBasicExample" rowspan="1"
+                        colspan="1" aria-label="Salary
+  
+            : activate to sort column ascending" style="width: 75px;">
+                      Status
+  
+                    </th>
+                    <th class="th-sm sorting" tabindex="0" aria-controls="dtBasicExample" rowspan="1"
+                        colspan="1" aria-label="Salary
+  
+            : activate to sort column ascending" style="width: 75px;">
+                      Action
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <ng-container *ngIf="listData && listData,length">
+                    <ng-container *ngFor="let item of listData">
+  
+                      <tr role="row" class="even">
+                        <td class="sorting_1">{{item.candidateId}}</td>
+                        <td>{{item.candidateName}}</td>
+                        <td>{{item.candidateStatus}}</td>
+                        <td>{{item.createdDate}}</td>
+                        <td>{{item.jobTitle}}</td>
+                        <td>{{item.stageName}}</td>
+                      <td><a href="javascript:void(0)" (click)="viewDetail(item.candidateId)">View</a></td>
+                      </tr>
+
+                    </ng-container>
+                  </ng-container>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th rowspan="1" colspan="1">
+                      Accession Number
+                    </th>
+                    <th rowspan="1" colspan="1">
+                      Broker
+                    </th>
+                    <th rowspan="1" colspan="1">
+                      Billing Method
+                    </th>
+                    <th rowspan="1" colspan="1">
+                      DOB
+                    </th>
+                    <th rowspan="1" colspan="1">
+                      Full Address
+                    </th>
+                    <th rowspan="1" colspan="1">
+                      Status
+                    </th>
+                  </tr>
+  
+  
+  
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  
+  </section>
+  

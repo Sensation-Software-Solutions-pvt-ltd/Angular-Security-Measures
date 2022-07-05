@@ -1,0 +1,53 @@
+<form>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>candidateName</label>
+                <input class="form-control" type="text" name="candidatename" candidatename="ngModel" disabled
+                    [(ngModel)]="userDetail.candidateName">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>emailAddress</label>
+                <input class="form-control" type="text" name="emailAddress" emailAddress="ngModel" disabled
+                    [(ngModel)]="userDetail.emailAddress">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>job Title</label>
+                <input class="form-control" type="text" name="jobTitle" jobTitle="ngModel" disabled
+                    [(ngModel)]="userDetail.jobTitle">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Stage Name</label>
+                <input class="form-control" type="text" name="stageName" stageName="ngModel" disabled
+                    [(ngModel)]="userDetail.stageName">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>stageName</label>
+                <input class="form-control" type="text" name="stageName" stageName="ngModel" disabled
+                    [(ngModel)]="userDetail.stageName">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Password</label>
+                <input class="form-control" type="text" name="stageName" stageName="ngModel" disabled
+                    [(ngModel)]="userDetail.stageName">
+            </div>
+        </div>
+        <button type="button" class="btn btn-success" (click)="redirect()">Back</button>
+    </div>
+
+
+</form>
