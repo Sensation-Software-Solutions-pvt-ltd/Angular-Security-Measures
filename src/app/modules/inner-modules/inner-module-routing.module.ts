@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SecureInnerPagesGuard } from 'src/app/services/auth-service/auth.service';
 import { InnerLayoutComponent } from './layout/inner-layout/inner-layout.component';
 import { HomeComponent } from './pages/home/home.component';
+import { SanitizingComponent } from './pages/sanitizing/sanitizing.component';
 import { UserDetailComponent } from './pages/user-detail/user-detail.component';
 import { UsersListComponent } from './pages/users-list/users-list.component';
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent ,canActivate:[SecureInnerPagesGuard]},
       { path: 'user-list', component: UsersListComponent,canActivate:[SecureInnerPagesGuard]},
       { path: 'user-detail', component: UserDetailComponent,canActivate:[SecureInnerPagesGuard]},
+      { path: 'sanitizing', component: SanitizingComponent,canActivate:[SecureInnerPagesGuard]},
     ]
   }
 ];

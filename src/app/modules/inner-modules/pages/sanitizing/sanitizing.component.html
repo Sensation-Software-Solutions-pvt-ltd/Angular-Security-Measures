@@ -1,0 +1,57 @@
+
+
+<div class="container">
+  <h1>Domsanitizer in Angular!</h1>
+  <p>DomSanitizer helps preventing Cross Site Scripting Security bugs (XSS) by sanitizing values to be safe to use in the different DOM contexts.</p>
+  <br>
+  <h3>1. Sanitization On Html</h3>
+  <br>
+  <div class="card-columns">
+    <label>Without-sanitization</label>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p>{{unTrustedHtml}}</p>
+      </div>
+    </div>
+    <label>With-sanitization</label>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p>{{trustedUrlHtml}}</p>
+      </div>
+    </div>
+ 
+    <label>Inbuilt Sanitization</label>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p [innerHtml]="unTrustedHtml"></p>
+      </div>
+    </div>
+    
+  </div>
+<br><br><br>
+<h3>2. Sanitization On Anchor tag </h3>
+<br>
+  <div class="row">
+    <div class="col-md-4">
+      <a href="javascript:alert('hello')">click here</a>
+    </div>
+    <div class="col-md-4">
+      <a [href]="hrefSafeUrl">click here</a>
+    </div>
+    <div class="col-md-4">
+      <a [href]="hrefUrl">click here
+      </a>
+    </div>
+  </div>
+
+
+      
+
+</div>
+
+
+
+
+
+
+ 

@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { UsersListComponent } from './pages/users-list/users-list.component';
 import { UserDetailComponent } from './pages/user-detail/user-detail.component';
 import { FormsModule } from '@angular/forms';
+import { SanitizingComponent } from './pages/sanitizing/sanitizing.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     InnerSidebarComponent,
     HomeComponent,
     UsersListComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    SanitizingComponent
   ],
   imports: [
     CommonModule,

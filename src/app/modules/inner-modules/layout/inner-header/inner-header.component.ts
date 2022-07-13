@@ -22,7 +22,10 @@ export class InnerHeaderComponent implements OnInit {
   logOut() {
     debugger
     this._securityCookieService.clearTokenCookies();
-    this._router.navigate(["login"]);
+    setTimeout(()=>{                     
+      this._router.navigate(["login"]);
+  }, 500);
+  
 
   }
 
