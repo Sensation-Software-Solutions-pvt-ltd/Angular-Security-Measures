@@ -24,7 +24,7 @@ export class InnerHeaderComponent implements OnInit {
     this._securityCookieService.clearTokenCookies();
     setTimeout(()=>{                     
       this._router.navigate(["login"]);
-  }, 500);
+  }, 500);                                                                                                                                                                                                                                                                                                           
   
 
   }
